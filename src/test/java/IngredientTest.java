@@ -27,19 +27,19 @@ public class IngredientTest {
     }
 
     @Test
-    public void IngredientGetPriceTest(){
+    public void ingredientGetPriceTest(){
         Ingredient ingredient = new Ingredient(type, name, price);
         assertEquals("Цена ингредиента должна быть " + price, price, ingredient.getPrice(), 0);
     }
 
     @Test
-    public void IngredientGetNameTest(){
+    public void ingredientGetNameTest(){
         Ingredient ingredient = new Ingredient(type, name, price);
         assertEquals("Наименование ингредиента должно быть  " + name, name, ingredient.getName());
     }
 
     @Test
-    public void IngredientGetTypeTest(){
+    public void ingredientGetTypeTest(){
         Ingredient ingredient = new Ingredient(type, name, price);
         assertEquals("Тип ингредиента должен быть  " + type, type, ingredient.getType());
     }
